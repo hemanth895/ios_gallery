@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ImageCell" customModule="IOS_gallery" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="282" height="111"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="282" height="111"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NN5-La-zME">
+                        <rect key="frame" x="0.0" y="0.0" width="282" height="111"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="otO-OB-AUP" customClass="SDAnimatedImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="282" height="111"/>
+                            </imageView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="NN5-La-zME" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Dtl-Lh-PMN"/>
+                <constraint firstAttribute="bottom" secondItem="NN5-La-zME" secondAttribute="bottom" id="Shl-8j-TPH"/>
+                <constraint firstAttribute="trailing" secondItem="NN5-La-zME" secondAttribute="trailing" id="W7J-16-eFM"/>
+                <constraint firstItem="NN5-La-zME" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="xXJ-pq-C7l"/>
+            </constraints>
+            <size key="customSize" width="282" height="111"/>
+            <connections>
+                <outlet property="imageView" destination="otO-OB-AUP" id="3xE-bF-0lo"/>
+            </connections>
+            <point key="canvasLocation" x="204.58015267175571" y="41.197183098591552"/>
+        </collectionViewCell>
+    </objects>
+</document>
