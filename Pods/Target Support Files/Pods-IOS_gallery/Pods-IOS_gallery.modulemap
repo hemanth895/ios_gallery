@@ -1,0 +1,6 @@
+framework module Pods_IOS_gallery {
+  umbrella header "Pods-IOS_gallery-umbrella.h"
+
+  export *
+  module * { export * }
+}
